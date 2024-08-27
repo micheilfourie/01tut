@@ -27,6 +27,50 @@ body, #root {
   justify-content: center;
 }
 
+.Item-Container{
+  text-align: left;
+  width: 50%
+}
+
+.Item-Container ul{
+  list-style: none;
+  margin:  0;
+  padding: 0;
+  width: 100%;
+}
+
+.Item-Container li{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: lightblue;
+  margin-top: 10px;
+  padding: 5px;
+}
+
+.Item-Container input, .fa-trash svg{
+  height:30px;
+  width: 30px;
+}
+
+.Item-Container i{
+  align-items: flex-end;
+}
+
+.fa-trash svg:hover, .Item-Container input:hover {
+  cursor: pointer;
+}
+
+.fa-trash svg:hover{
+  color: rgb(214, 0, 0);
+}
+
+.Item-Container li:hover{
+  background-color: rgb(54, 147, 253);
+  color: aliceblue;
+}
+
 .Footer {
   margin-top: auto;
 }
