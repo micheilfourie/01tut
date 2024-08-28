@@ -24,12 +24,12 @@ body, #root {
 
 .Content{
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .Item-Container{
-  text-align: left;
-  width: 50%
+  width: 100%;
+  max-width: 500px;
 }
 
 .Item-Container ul{
@@ -44,9 +44,10 @@ body, #root {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  background-color: lightblue;
-  margin-top: 10px;
-  padding: 5px;
+  background-color: rgb(236, 236, 236);;
+  margin: 1rem 0 1rem 0;
+  padding: 1rem;
+  height: 2rem;
 }
 
 .Item-Container input, .fa-trash svg{
@@ -54,21 +55,16 @@ body, #root {
   width: 30px;
 }
 
-.Item-Container i{
-  align-items: flex-end;
-}
-
 .fa-trash svg:hover, .Item-Container input:hover {
   cursor: pointer;
 }
 
 .fa-trash svg:hover{
-  color: rgb(214, 0, 0);
+  color: rgb(255, 0, 0);
 }
 
-.Item-Container li:hover{
-  background-color: rgb(54, 147, 253);
-  color: aliceblue;
+.fa-trash svg{
+  color: rgb(2, 154, 255);
 }
 
 .Footer {
